@@ -1,0 +1,21 @@
+PODS:
+  - Thematic (1.0.0):
+    - Thematic/Core (= 1.0.0)
+    - Thematic/Theme (= 1.0.0)
+  - Thematic/Core (1.0.0)
+  - Thematic/Theme (1.0.0):
+    - Thematic/Core
+
+DEPENDENCIES:
+  - Thematic (from `../`)
+
+EXTERNAL SOURCES:
+  Thematic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Thematic: 4e8c9428695f55789da8f21c34a738814a2fec69
+
+PODFILE CHECKSUM: 7f7ee3fd1b1c7d83c85e9e933d90166d5c86f4ea
+
+COCOAPODS: 1.10.1
