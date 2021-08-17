@@ -25,7 +25,7 @@ public class ThemeManager: NSObject {
             
             UIView.animate(withDuration: 0.25) {
                 self.viewHashTable.allObjects.forEach { view in
-                    view.userInterfaceThemeDidChange(view.userInterfaceTheme)
+                    view.themeDidChange(view.theme)
                 }
             }
         }

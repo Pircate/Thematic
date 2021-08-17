@@ -53,7 +53,7 @@ public extension UIImage {
         self.assetInfo = AssetInfo(bundle: bundle, name: assetName)
     }
     
-    @objc func withUserInterfaceTheme(_ theme: Theme) -> UIImage {
+    @objc func withThemeComponent(_ theme: Theme) -> UIImage {
         guard let assetInfo = assetInfo else { return self }
         
         return UIImage(

@@ -10,71 +10,71 @@ import Foundation
 
 extension CALayer {
     
-    open override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         if let backgroundColor = backgroundColor, backgroundColor.themable {
-            self.backgroundColor = backgroundColor.withUserInterfaceTheme(theme)
+            self.backgroundColor = backgroundColor.withThemeComponent(theme)
         }
         
         if let borderColor = borderColor, borderColor.themable {
-            self.borderColor = borderColor.withUserInterfaceTheme(theme)
+            self.borderColor = borderColor.withThemeComponent(theme)
         }
         
         if let shadowColor = shadowColor, shadowColor.themable {
-            self.shadowColor = shadowColor.withUserInterfaceTheme(theme)
+            self.shadowColor = shadowColor.withThemeComponent(theme)
         }
         
         if let sublayers = sublayers, !sublayers.isEmpty {
-            sublayers.forEach { $0.userInterfaceThemeDidChange(theme) }
+            sublayers.forEach { $0.themeDidChange(theme) }
         }
     }
 }
 
 extension CAGradientLayer {
     
-    open override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         if let colors = colors as? [CGColor], colors.contains(where: { $0.themable }) {
-            self.colors = colors.map { $0.withUserInterfaceTheme(theme) }
+            self.colors = colors.map { $0.withThemeComponent(theme) }
         }
     }
 }
 
 extension CAShapeLayer {
     
-    open override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         if let fillColor = fillColor, fillColor.themable {
-            self.fillColor = fillColor.withUserInterfaceTheme(theme)
+            self.fillColor = fillColor.withThemeComponent(theme)
         }
         
         if let strokeColor = strokeColor, strokeColor.themable {
-            self.strokeColor = strokeColor.withUserInterfaceTheme(theme)
+            self.strokeColor = strokeColor.withThemeComponent(theme)
         }
     }
 }
 
 extension CAReplicatorLayer {
     
-    open override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         if let instanceColor = instanceColor, instanceColor.themable {
-            self.instanceColor = instanceColor.withUserInterfaceTheme(theme)
+            self.instanceColor = instanceColor.withThemeComponent(theme)
         }
     }
 }
 
 extension CATextLayer {
     
-    open override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         if let foregroundColor = foregroundColor, foregroundColor.themable {
-            self.foregroundColor = foregroundColor.withUserInterfaceTheme(theme)
+            self.foregroundColor = foregroundColor.withThemeComponent(theme)
         }
     }
 }

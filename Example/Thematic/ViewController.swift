@@ -22,7 +22,7 @@ extension UIColor {
 
 class CustomView: UIView {
     
-    override func userInterfaceThemeDidChange(_ theme: Theme) {
+    override func themeDidChange(_ theme: Theme) {
         layer.backgroundColor = UIColor(dynamicTheme: { theme -> UIColor in
             switch theme {
             case .light:
@@ -38,8 +38,8 @@ class CustomView: UIView {
 
 class ViewController: UIViewController {
     
-    override func userInterfaceThemeDidChange(_ theme: Theme) {
-        super.userInterfaceThemeDidChange(theme)
+    override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
         
         navigationController?.navigationBar.barStyle = .init(dynamicTheme: { theme -> UIBarStyle in
             switch theme {

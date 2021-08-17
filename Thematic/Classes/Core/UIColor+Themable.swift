@@ -62,7 +62,7 @@ public extension UIColor {
         self.cgColor.superUIColor = self
     }
     
-    @objc func withUserInterfaceTheme(_ theme: Theme) -> UIColor {
+    @objc func withThemeComponent(_ theme: Theme) -> UIColor {
         guard let assetInfo = assetInfo else { return self }
         
         let color = UIColor(

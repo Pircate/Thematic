@@ -14,7 +14,7 @@ extension UIView {
         .current
     }
     
-    open override var userInterfaceTheme: Theme {
+    open override var theme: Theme {
         overrideUserInterfaceTheme.theme
     }
 }
@@ -25,7 +25,7 @@ extension UIViewController {
         .current
     }
     
-    open override var userInterfaceTheme: Theme {
+    open override var theme: Theme {
         overrideUserInterfaceTheme.theme
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSAttributedString {
     
-    @objc func withUserInterfaceTheme(_ theme: Theme) -> NSAttributedString {
+    @objc func withThemeComponent(_ theme: Theme) -> NSAttributedString {
         let range = NSRange(location: 0, length: length)
         let mAttrText = NSMutableAttributedString(attributedString: self)
         
@@ -19,7 +19,7 @@ public extension NSAttributedString {
             options: []
         ) { attributes, range, _ in
             mAttrText.setAttributes(
-                attributes.withUserInterfaceTheme(theme),
+                attributes.withThemeComponent(theme),
                 range: range
             )
         }
@@ -30,27 +30,27 @@ public extension NSAttributedString {
 
 extension Dictionary where Key == NSAttributedString.Key, Value == Any {
     
-    func withUserInterfaceTheme(_ theme: Theme) -> Self {
+    func withThemeComponent(_ theme: Theme) -> Self {
         var attrs = self
         
         if let color = self[.foregroundColor] as? UIColor, color.themable {
-            attrs[.foregroundColor] = color.withUserInterfaceTheme(theme)
+            attrs[.foregroundColor] = color.withThemeComponent(theme)
         }
         
         if let color = self[.backgroundColor] as? UIColor, color.themable {
-            attrs[.backgroundColor] = color.withUserInterfaceTheme(theme)
+            attrs[.backgroundColor] = color.withThemeComponent(theme)
         }
         
         if let color = self[.strokeColor] as? UIColor, color.themable {
-            attrs[.strokeColor] = color.withUserInterfaceTheme(theme)
+            attrs[.strokeColor] = color.withThemeComponent(theme)
         }
         
         if let color = self[.underlineColor] as? UIColor, color.themable {
-            attrs[.underlineColor] = color.withUserInterfaceTheme(theme)
+            attrs[.underlineColor] = color.withThemeComponent(theme)
         }
         
         if let color = self[.strikethroughColor] as? UIColor, color.themable {
-            attrs[.strikethroughColor] = color.withUserInterfaceTheme(theme)
+            attrs[.strikethroughColor] = color.withThemeComponent(theme)
         }
         
         return attrs

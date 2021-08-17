@@ -34,9 +34,9 @@ extension CGColor {
 
 extension CGColor {
     
-    func withUserInterfaceTheme(_ theme: Theme) -> CGColor {
+    func withThemeComponent(_ theme: Theme) -> CGColor {
         guard let superUIColor = superUIColor, superUIColor.themable else { return self }
         
-        return superUIColor.withUserInterfaceTheme(theme).cgColor
+        return superUIColor.withThemeComponent(theme).cgColor
     }
 }

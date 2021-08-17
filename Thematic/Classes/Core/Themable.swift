@@ -53,9 +53,9 @@ public typealias Assets = [String: String]
 @objc public protocol Themable {
     
     /// UI 主题
-    var userInterfaceTheme: Theme { get }
+    var theme: Theme { get }
     
     /// UI 主题发生变化
     /// - Parameter theme: 主题
-    func userInterfaceThemeDidChange(_ theme: Theme)
+    func themeDidChange(_ theme: Theme)
 }

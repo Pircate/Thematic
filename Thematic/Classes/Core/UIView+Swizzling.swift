@@ -57,7 +57,7 @@ extension UIView {
     @objc func theme_didMoveToSuperview() {
         theme_didMoveToSuperview()
         
-        userInterfaceThemeDidChange(userInterfaceTheme)
+        themeDidChange(theme)
         
         isDynamicThemeEnabled = true
     }
