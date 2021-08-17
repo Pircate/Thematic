@@ -1,9 +1,9 @@
 // 
 //  UserInterfaceTheme.swift
-//  Theme
+//  Thematic
 //
-//  Created by Pircate(swifter.dev@gmail.com) on 12/23/20
-//  
+//  Created by Pircate on 08/17/2021.
+//  Copyright (c) 2021 gao497868860@163.com. All rights reserved.
 //
 
 import UIKit

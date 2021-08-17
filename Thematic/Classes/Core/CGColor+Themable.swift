@@ -1,8 +1,9 @@
 //
 //  CGColor+Themable.swift
-//  Theming
+//  Thematic
 //
-//  Created by gaoxiang on 2021/8/17.
+//  Created by Pircate on 08/17/2021.
+//  Copyright (c) 2021 gao497868860@163.com. All rights reserved.
 //
 
 import Foundation
