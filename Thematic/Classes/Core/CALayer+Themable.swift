@@ -25,7 +25,8 @@ extension CALayer {
             self.shadowColor = shadowColor.withThemeComponent(theme)
         }
         
-        if let sublayers = sublayers, !sublayers.isEmpty {
+        if let sublayers = sublayers?.filter({ !$0.isMember(of: CALayer.self) }),
+           !sublayers.isEmpty {
             sublayers.forEach { $0.themeDidChange(theme) }
         }
     }
