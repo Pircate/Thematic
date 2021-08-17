@@ -20,7 +20,7 @@
 		5CFC36F10AA1A30876193C40706128FD /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D388FC8D34BEBE17DB5C401A9FCFD0 /* DynamicTheme.swift */; };
 		616C3DE8886A3A4D6955DE117B5DF663 /* Pods-Thematic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75615A9A93349A34BF012E4E45E3B9D /* Pods-Thematic_Tests-dummy.m */; };
 		6937B3F3BD03A99E86D1DB3DB3A2F6C0 /* AssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AEFD5C80C280EAD907EDE5C7FEB7ED /* AssociatedKeys.swift */; };
-		6EC4FD179262C2A6DFC430223C868072 /* UIView+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB894515B7C38330B8E62740F55DFE9 /* UIView+Swizzling.swift */; };
+		6EC4FD179262C2A6DFC430223C868072 /* UIKit+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB894515B7C38330B8E62740F55DFE9 /* UIKit+Swizzling.swift */; };
 		7B0D9F6A39C64CB4124403BE82D9F526 /* NSAttributedString+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72794FC48BB43054D39995846F23734D /* NSAttributedString+Themable.swift */; };
 		8055C34239403C856C85DA360D86CC9D /* CALayer+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD691EF6C309A37D471B16A85183C15B /* CALayer+Themable.swift */; };
 		8CE59DB01969787DF582646A909D217B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -56,7 +56,7 @@
 /* Begin PBXFileReference section */
 		012DF033E03CF8A1E34CB20F4C257864 /* Pods-Thematic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thematic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		04D0EE3137FFDDF724338C363537B5AC /* Thematic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thematic-dummy.m"; sourceTree = "<group>"; };
-		0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods_Thematic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Thematic_Example.framework; path = "Pods-Thematic_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods_Thematic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thematic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F86A51D92AA05530BE089E22F97004B /* Pods-Thematic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thematic_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		11609B3E8919C7E9C7422C331B0E9BFD /* ThemeManager+ApplyTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ThemeManager+ApplyTheme.swift"; path = "Thematic/Classes/Theme/ThemeManager+ApplyTheme.swift"; sourceTree = "<group>"; };
 		119C381B9AB7912321BAF365E5FDA158 /* CGColor+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGColor+Themable.swift"; path = "Thematic/Classes/Core/CGColor+Themable.swift"; sourceTree = "<group>"; };
@@ -70,9 +70,9 @@
 		3C08226A7295E4B0CC795328DF23A17C /* Pods-Thematic_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thematic_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		465AABEF9D553D4AB0C2ABAB91F8E9E5 /* ThemeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeManager.swift; path = Thematic/Classes/Core/ThemeManager.swift; sourceTree = "<group>"; };
 		4A017541736DE36661B39F13DE3B183D /* Pods-Thematic_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thematic_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C082093461D5A456BF521BB0AA90913 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C082093461D5A456BF521BB0AA90913 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4E7FED8780CA0BE2FE26FA38D4FA32BA /* DefaultTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultTheme.swift; path = Thematic/Classes/Theme/DefaultTheme.swift; sourceTree = "<group>"; };
-		525BAB982FA248B241C028A9266DE482 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		525BAB982FA248B241C028A9266DE482 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		54F761F65D78710783C27142E9DC4986 /* UIColor+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Themable.swift"; path = "Thematic/Classes/Core/UIColor+Themable.swift"; sourceTree = "<group>"; };
 		5639C14C09C6BC254B8C4A3F70E47BF6 /* LightTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LightTheme.swift; path = Thematic/Classes/Theme/LightTheme.swift; sourceTree = "<group>"; };
 		592E6FF47DE20303EB9A9641A309244A /* Thematic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Thematic.release.xcconfig; sourceTree = "<group>"; };
@@ -85,20 +85,20 @@
 		7A88D5976430A7B29DC6F57B6FB2345E /* Thematic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Thematic-prefix.pch"; sourceTree = "<group>"; };
 		7A9CD2302B006AAE29C68740DE2A5D62 /* NSObject+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Themable.swift"; path = "Thematic/Classes/Core/NSObject+Themable.swift"; sourceTree = "<group>"; };
 		962DBDA3CDD755D2AC8826E8FC36D78E /* Pods-Thematic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thematic_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9CB894515B7C38330B8E62740F55DFE9 /* UIView+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Swizzling.swift"; path = "Thematic/Classes/Core/UIView+Swizzling.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CB894515B7C38330B8E62740F55DFE9 /* UIKit+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Swizzling.swift"; path = "Thematic/Classes/Core/UIKit+Swizzling.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1E9D0354FB671069E887464B25FD949 /* Pods-Thematic_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thematic_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A36025946FD8F4B2A775669A8B5FC1E0 /* Pods-Thematic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thematic_Example-umbrella.h"; sourceTree = "<group>"; };
 		A82555F1B6389FBFEAAF76A865953D46 /* Thematic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Thematic-Info.plist"; sourceTree = "<group>"; };
 		ACF9183DCC186B2E078A1C8A90CF1EF3 /* Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Themable.swift; path = Thematic/Classes/Core/Themable.swift; sourceTree = "<group>"; };
 		AD691EF6C309A37D471B16A85183C15B /* CALayer+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Themable.swift"; path = "Thematic/Classes/Core/CALayer+Themable.swift"; sourceTree = "<group>"; };
-		B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Thematic.framework; path = Thematic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Thematic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0691B144C00DF5B72B51ECB552E2008 /* Pods-Thematic_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thematic_Tests-Info.plist"; sourceTree = "<group>"; };
 		C08AC3A33967CA3852E108D1C6916B44 /* DarkTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkTheme.swift; path = Thematic/Classes/Theme/DarkTheme.swift; sourceTree = "<group>"; };
 		C0E94B989336311DA819DE0A7C0DD189 /* Pods-Thematic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thematic_Example-dummy.m"; sourceTree = "<group>"; };
-		C655E2E0163CC1D2FD57C647CE51152E /* Thematic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Thematic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C655E2E0163CC1D2FD57C647CE51152E /* Thematic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Thematic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDD0D11017113986AB017F2D517145BB /* UserInterfaceTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterfaceTheme.swift; path = Thematic/Classes/Theme/UserInterfaceTheme.swift; sourceTree = "<group>"; };
-		D53C807ED763672CAE15E628EC7C9FFC /* Pods_Thematic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Thematic_Tests.framework; path = "Pods-Thematic_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53C807ED763672CAE15E628EC7C9FFC /* Pods_Thematic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thematic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3E96405E4A72D5F0D872CBD217411 /* Pods-Thematic_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thematic_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3D1C4901532150DFAD9661B6DF0D02C /* Pods-Thematic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thematic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F75615A9A93349A34BF012E4E45E3B9D /* Pods-Thematic_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thematic_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				465AABEF9D553D4AB0C2ABAB91F8E9E5 /* ThemeManager.swift */,
 				54F761F65D78710783C27142E9DC4986 /* UIColor+Themable.swift */,
 				7265157539C4556682B17475DFCB8A0D /* UIImage+Themable.swift */,
-				9CB894515B7C38330B8E62740F55DFE9 /* UIView+Swizzling.swift */,
+				9CB894515B7C38330B8E62740F55DFE9 /* UIKit+Swizzling.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -457,7 +457,7 @@
 				56781DF34E5F0DF3AE6D8290657EDDC1 /* UIColor+Themable.swift in Sources */,
 				A8748B18842529204D45E3AB22DE2F66 /* UIImage+Themable.swift in Sources */,
 				38CFB8DEFCA02B2E118F9251D98DACAB /* UIKit+Theme.swift in Sources */,
-				6EC4FD179262C2A6DFC430223C868072 /* UIView+Swizzling.swift in Sources */,
+				6EC4FD179262C2A6DFC430223C868072 /* UIKit+Swizzling.swift in Sources */,
 				590DE620F017B34A5F0EF63ACC31A2C4 /* UserInterfaceTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,8 +705,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

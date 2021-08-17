@@ -8,23 +8,26 @@
 
 import UIKit
 
-infix operator <=>
-
-private extension Selector {
-    
-    static func <=> (left: Selector, right: Selector) {
-        if let m1 = class_getInstanceMethod(UIView.self, left),
-           let m2 = class_getInstanceMethod(UIView.self, right) {
-            method_exchangeImplementations(m1, m2)
-        }
+private func method_exchange(_ cls: AnyClass, s1: Selector, s2: Selector) {
+    if let m1 = class_getInstanceMethod(cls, s1),
+       let m2 = class_getInstanceMethod(cls, s2) {
+        method_exchangeImplementations(m1, m2)
     }
 }
 
 extension UIView {
     
     static let methodSwizzling: Void = {
-        #selector(didMoveToSuperview) <=> #selector(theme_didMoveToSuperview)
-        #selector(setter: backgroundColor) <=> #selector(setter: theme_backgroundColor)
+        method_exchange(
+            UIView.self,
+            s1: #selector(didMoveToSuperview),
+            s2: #selector(theme_didMoveToSuperview)
+        )
+        method_exchange(
+            UIView.self,
+            s1: #selector(setter: backgroundColor),
+            s2: #selector(setter: theme_backgroundColor)
+        )
     }()
     
     var backgroundColorAssetInfo: AssetInfo? {
@@ -63,19 +66,42 @@ extension UIView {
     }
 }
 
+extension UIViewController {
+    
+    static let methodSwizzling: Void = {
+        method_exchange(
+            UIViewController.self,
+            s1: #selector(viewDidLoad),
+            s2: #selector(theme_viewDidLoad)
+        )
+    }()
+    
+    @objc func theme_viewDidLoad() {
+        theme_viewDidLoad()
+        
+        themeDidChange(theme)
+        
+        isDynamicThemeEnabled = true
+    }
+}
+
 extension UIColor {
     
     static let methodSwizzling: Void = {
-        if let cls = objc_getClass("UIDeviceRGBColor") as? AnyClass,
-           let m1 = class_getInstanceMethod(cls, #selector(withAlphaComponent(_:))),
-           let m2 = class_getInstanceMethod(cls, #selector(theme_withAlphaComponent1(_:))) {
-            method_exchangeImplementations(m1, m2)
+        if let cls = objc_getClass("UIDeviceRGBColor") as? AnyClass {
+            method_exchange(
+                cls,
+                s1: #selector(withAlphaComponent(_:)),
+                s2: #selector(theme_withAlphaComponent1(_:))
+            )
         }
         
-        if let cls = objc_getClass("UICGColor") as? AnyClass,
-           let m1 = class_getInstanceMethod(cls, #selector(withAlphaComponent(_:))),
-           let m2 = class_getInstanceMethod(cls, #selector(theme_withAlphaComponent2(_:))) {
-            method_exchangeImplementations(m1, m2)
+        if let cls = objc_getClass("UICGColor") as? AnyClass {
+            method_exchange(
+                cls,
+                s1: #selector(withAlphaComponent(_:)),
+                s2: #selector(theme_withAlphaComponent2(_:))
+            )
         }
     }()
     

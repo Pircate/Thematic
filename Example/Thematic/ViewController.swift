@@ -56,9 +56,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        isDynamicThemeEnabled = true
-        
-        
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [UIColor.themeMainColor.cgColor, UIColor.themeTextColor.cgColor]

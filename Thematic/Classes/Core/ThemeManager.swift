@@ -37,6 +37,7 @@ public class ThemeManager: NSObject {
     
     private override init() {
         UIView.methodSwizzling
+        UIViewController.methodSwizzling
         UIColor.methodSwizzling
     }
 }
