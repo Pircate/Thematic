@@ -34,6 +34,11 @@ extension UIImage {
 
 public extension UIImage {
     
+    /// UIImage 构造方法
+    /// - Parameters:
+    ///   - assetName: 资源名称，用了标记资源
+    ///   - bundle: 资源所在的 bundle
+    ///   - theme: 主题，默认是当前主题
     @objc convenience init?(
         assetName: String,
         in bundle: Bundle = .main,
@@ -53,6 +58,9 @@ public extension UIImage {
         self.assetInfo = AssetInfo(bundle: bundle, name: assetName)
     }
     
+    /// 根据主题返回对应的 UIImage
+    /// - Parameter theme: 主题
+    /// - Returns: 主题对应的 UIImage
     @objc func withThemeComponent(_ theme: Theme) -> UIImage {
         guard let assetInfo = assetInfo else { return self }
         

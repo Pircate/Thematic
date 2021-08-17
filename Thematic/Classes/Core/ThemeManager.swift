@@ -13,6 +13,7 @@ public class ThemeManager: NSObject {
     
     public static let shared: ThemeManager = ThemeManager()
     
+    /// 当前主题，默认是空主题
     public private(set) var currentTheme: Theme = EmptyTheme() {
         didSet {
             guard currentTheme.identifier != oldValue.identifier else { return }
@@ -44,10 +45,14 @@ public class ThemeManager: NSObject {
 
 public extension ThemeManager {
     
+    /// 应用主题
+    /// - Parameter theme: 主题
     func applyTheme(_ theme: Theme) {
         currentTheme = theme
     }
     
+    /// 添加资源 bundle
+    /// - Parameter bundle: 资源所在的 bundle
     func appendResourceBundle(_ bundle: Bundle) {
         reloadAssets(for: currentTheme, in: bundle)
     }

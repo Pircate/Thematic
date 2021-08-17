@@ -28,7 +28,7 @@ import UIKit
         }
     }
     
-    public internal(set) static var current: UserInterfaceTheme = .default
+    static var current: UserInterfaceTheme = .default
 }
 
 extension UserInterfaceTheme: CustomStringConvertible {

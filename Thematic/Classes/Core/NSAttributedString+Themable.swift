@@ -10,6 +10,9 @@ import Foundation
 
 public extension NSAttributedString {
     
+    /// 根据主题返回对应的富文本
+    /// - Parameter theme: 主题
+    /// - Returns: 主题对应的富文本
     @objc func withThemeComponent(_ theme: Theme) -> NSAttributedString {
         let range = NSRange(location: 0, length: length)
         let mAttrText = NSMutableAttributedString(attributedString: self)

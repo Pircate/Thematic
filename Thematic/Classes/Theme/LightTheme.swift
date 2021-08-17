@@ -15,7 +15,7 @@ public class LightTheme: Theme {
     public var identifier: String { UserInterfaceTheme.light.description }
     
     public var colorAssetType: ColorAssetType {
-        .table
+        .mapTable
     }
     
     public var imageAssetType: ImageAssetType {

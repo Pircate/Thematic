@@ -34,6 +34,11 @@ extension UIColor {
 
 public extension UIColor {
     
+    /// UIColor 构造方法
+    /// - Parameters:
+    ///   - assetName: 资源名称，用来标记资源
+    ///   - bundle: 资源所在的 bundle
+    ///   - theme: 主题，默认是当前主题
     @objc convenience init?(
         assetName: String,
         in bundle: Bundle = .main,
@@ -50,7 +55,7 @@ public extension UIColor {
             } else {
                 fatalError("Color Set were not supported before iOS 11.")
             }
-        case .table:
+        case .mapTable:
             let table = theme.isCurrent
                 ? ThemeManager.shared.cacheColorTable(in: bundle)
                 : theme.colorAssets(in: bundle)
@@ -62,6 +67,9 @@ public extension UIColor {
         self.cgColor.superUIColor = self
     }
     
+    /// 根据主题返回对应的 UIColor
+    /// - Parameter theme: 主题
+    /// - Returns: 主题对应的 UIColor
     @objc func withThemeComponent(_ theme: Theme) -> UIColor {
         guard let assetInfo = assetInfo else { return self }
         

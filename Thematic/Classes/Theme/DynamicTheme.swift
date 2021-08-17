@@ -18,7 +18,7 @@ public class DynamicTheme: Theme {
     }
     
     public var colorAssetType: ColorAssetType {
-        .table
+        .mapTable
     }
     
     public var imageAssetType: ImageAssetType {

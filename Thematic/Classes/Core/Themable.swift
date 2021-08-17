@@ -11,12 +11,16 @@ import UIKit
 public typealias Assets = [String: String]
 
 @objc public enum ColorAssetType: Int {
+    /// Xcode 资源目录
     case xcassets
-    case table
+    /// 资源映射表，可以是 plist、json 等格式
+    case mapTable
 }
 
 @objc public enum ImageAssetType: Int {
+    /// Xcode 资源目录
     case xcassets
+    /// 文件路径，APP 根目录或者沙盒自定义路径
     case filePath
 }
 
@@ -52,10 +56,10 @@ public typealias Assets = [String: String]
 
 @objc public protocol Themable {
     
-    /// UI 主题
+    /// 主题
     var theme: Theme { get }
     
-    /// UI 主题发生变化
+    /// 主题发生变化
     /// - Parameter theme: 主题
     func themeDidChange(_ theme: Theme)
 }
