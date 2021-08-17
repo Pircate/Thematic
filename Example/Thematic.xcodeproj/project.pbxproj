@@ -226,10 +226,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H7TT6NGW64;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H7TT6NGW64;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -479,6 +481,7 @@
 			baseConfigurationReference = D45260C75BC57437A1515EE1 /* Pods-Thematic_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7TT6NGW64;
 				INFOPLIST_FILE = Thematic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 304432CBC88A6F2BEA3210F1 /* Pods-Thematic_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7TT6NGW64;
 				INFOPLIST_FILE = Thematic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -508,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9BC1ED79752565D93AC1866 /* Pods-Thematic_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = H7TT6NGW64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -530,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3739F8FC92202BFEC8067F03 /* Pods-Thematic_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = H7TT6NGW64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
