@@ -2,7 +2,7 @@
 //  OCViewController.h
 //  Thematic_Example
 //
-//  Created by gaoxiang on 2021/8/18.
+//  Created by Pircate on 2021/8/18.
 //  Copyright © 2021 CocoaPods. All rights reserved.
 //
 

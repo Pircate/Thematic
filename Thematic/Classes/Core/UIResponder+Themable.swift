@@ -116,8 +116,6 @@ extension UIImageView {
     }
 }
 
-
-
 extension UITabBar {
     
     open override func themeDidChange(_ theme: Theme) {

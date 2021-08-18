@@ -109,6 +109,8 @@ class ViewController: UIViewController {
         navigationItem.title = "Thematic"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.themeTextColor]
         navigationController?.navigationBar.barTintColor = .themeMainColor
+        
+        self.tabBarController?.tabBar.barTintColor = .themeMainColor
     }
     
     @objc private func didTapDefault() {
