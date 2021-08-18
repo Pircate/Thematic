@@ -8,6 +8,15 @@
 
 import UIKit
 
+extension UIResponder: Themable {
+    
+    open var theme: Theme {
+        ThemeManager.shared.currentTheme
+    }
+    
+    open func themeDidChange(_ theme: Theme) {}
+}
+
 extension UIView {
     
     open override func themeDidChange(_ theme: Theme) {
@@ -107,31 +116,7 @@ extension UIImageView {
     }
 }
 
-extension UIBarButtonItem {
-    
-    open override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
-        if let tintColor = tintColor, tintColor.themable {
-            self.tintColor = tintColor.withThemeComponent(theme)
-        }
-        
-        if let image = image, image.themable {
-            self.image = image.withThemeComponent(theme)
-        }
-    }
-}
 
-extension UIBarItem {
-    
-    open override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
-        if let image = image, image.themable {
-            self.image = image.withThemeComponent(theme)
-        }
-    }
-}
 
 extension UITabBar {
     
@@ -147,17 +132,6 @@ extension UITabBar {
                unselectedItemTintColor.themable {
                 self.unselectedItemTintColor = unselectedItemTintColor.withThemeComponent(theme)
             }
-        }
-    }
-}
-
-extension UITabBarItem {
-    
-    open override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
-        if let selectedImage = selectedImage, selectedImage.themable {
-            self.selectedImage = selectedImage.withThemeComponent(theme)
         }
     }
 }
@@ -331,17 +305,6 @@ extension UISlider {
 
         if let maximumTrackTintColor = maximumTrackTintColor, maximumTrackTintColor.themable {
             self.maximumTrackTintColor = maximumTrackTintColor.withThemeComponent(theme)
-        }
-    }
-}
-
-extension UIPopoverPresentationController {
-    
-    open override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
-        if let backgroundColor = backgroundColor, backgroundColor.themable {
-            self.backgroundColor = backgroundColor.withThemeComponent(theme)
         }
     }
 }

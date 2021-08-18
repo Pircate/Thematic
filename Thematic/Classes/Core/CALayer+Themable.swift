@@ -8,11 +8,13 @@
 
 import Foundation
 
-extension CALayer {
+extension CALayer: Themable {
     
-    open override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
+    open var theme: Theme {
+        ThemeManager.shared.currentTheme
+    }
+    
+    open func themeDidChange(_ theme: Theme) {
         if let backgroundColor = backgroundColor, backgroundColor.themable {
             self.backgroundColor = backgroundColor.withThemeComponent(theme)
         }

@@ -112,7 +112,6 @@ class ViewController: UIViewController {
             action: #selector(didTapLight)
         )
         navigationItem.leftBarButtonItem?.tintColor = .themeTextColor
-        navigationItem.leftBarButtonItem?.isDynamicThemeEnabled = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Dark",
@@ -121,7 +120,6 @@ class ViewController: UIViewController {
             action: #selector(didTapDark)
         )
         navigationItem.rightBarButtonItem?.tintColor = .themeTextColor
-        navigationItem.rightBarButtonItem?.isDynamicThemeEnabled = true
         
         navigationItem.title = "Theme"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.themeTextColor]
