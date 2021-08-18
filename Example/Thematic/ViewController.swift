@@ -37,21 +37,6 @@ class CustomView: UIView {
 }
 
 class ViewController: UIViewController {
-    
-    override func themeDidChange(_ theme: Theme) {
-        super.themeDidChange(theme)
-        
-        navigationController?.navigationBar.barStyle = .init(dynamicTheme: { theme -> UIBarStyle in
-            switch theme {
-            case .light:
-                return .default
-            case .dark:
-                return .black
-            default:
-                return .default
-            }
-        })
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -222,5 +207,23 @@ extension UIView {
             
             backgroundColor = UIColor(assetName: assetName)
         }
+    }
+}
+
+extension UINavigationController {
+    
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
+        
+        navigationBar.barStyle = UIBarStyle(dynamicTheme: { theme -> UIBarStyle in
+            switch theme {
+            case .light:
+                return .default
+            case .dark:
+                return .black
+            default:
+                return .default
+            }
+        })
     }
 }

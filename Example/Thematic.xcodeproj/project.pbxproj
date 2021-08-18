@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C913B8C0086E9B49E91C460 /* Pods_Thematic_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4835552A4082F70D715A569A /* Pods_Thematic_Example.framework */; };
+		46699B5F26CCB79900E56ACD /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46699B5D26CCB79900E56ACD /* OCViewController.m */; };
+		46699B6026CCB79900E56ACD /* OCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46699B5E26CCB79900E56ACD /* OCViewController.xib */; };
 		46C6CEC926CB726D00D12A8F /* default.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46C6CEC626CB726D00D12A8F /* default.plist */; };
 		46C6CECA26CB726D00D12A8F /* dark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46C6CEC726CB726D00D12A8F /* dark.plist */; };
 		46C6CECB26CB726D00D12A8F /* light.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46C6CEC826CB726D00D12A8F /* light.plist */; };
@@ -37,6 +39,10 @@
 		304432CBC88A6F2BEA3210F1 /* Pods-Thematic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thematic_Example.release.xcconfig"; path = "Target Support Files/Pods-Thematic_Example/Pods-Thematic_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3739F8FC92202BFEC8067F03 /* Pods-Thematic_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thematic_Tests.release.xcconfig"; path = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		40C7233EEC701D4FBCB143A1 /* Pods_Thematic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thematic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46699B5B26CCB79900E56ACD /* Thematic_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thematic_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		46699B5C26CCB79900E56ACD /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
+		46699B5D26CCB79900E56ACD /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
+		46699B5E26CCB79900E56ACD /* OCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCViewController.xib; sourceTree = "<group>"; };
 		46C6CEC626CB726D00D12A8F /* default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default.plist; sourceTree = "<group>"; };
 		46C6CEC726CB726D00D12A8F /* dark.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dark.plist; sourceTree = "<group>"; };
 		46C6CEC826CB726D00D12A8F /* light.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = light.plist; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				46699B5C26CCB79900E56ACD /* OCViewController.h */,
+				46699B5D26CCB79900E56ACD /* OCViewController.m */,
+				46699B5E26CCB79900E56ACD /* OCViewController.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				46C6CECC26CB727400D12A8F /* Theme.xcassets */,
@@ -123,6 +132,7 @@
 				46C6CECE26CB72B300D12A8F /* christmas.plist */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				46699B5B26CCB79900E56ACD /* Thematic_Example-Bridging-Header.h */,
 			);
 			name = "Example for Thematic";
 			path = Thematic;
@@ -227,7 +237,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = H7TT6NGW64;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1250;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -265,6 +275,7 @@
 				46C6CEC926CB726D00D12A8F /* default.plist in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				46699B6026CCB79900E56ACD /* OCViewController.xib in Resources */,
 				46C6CECB26CB726D00D12A8F /* light.plist in Resources */,
 				46C6CECA26CB726D00D12A8F /* dark.plist in Resources */,
 				46C6CECD26CB727400D12A8F /* Theme.xcassets in Resources */,
@@ -336,6 +347,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				46699B5F26CCB79900E56ACD /* OCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,12 +493,15 @@
 			baseConfigurationReference = D45260C75BC57437A1515EE1 /* Pods-Thematic_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H7TT6NGW64;
 				INFOPLIST_FILE = Thematic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thematic/Thematic_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -497,12 +512,14 @@
 			baseConfigurationReference = 304432CBC88A6F2BEA3210F1 /* Pods-Thematic_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H7TT6NGW64;
 				INFOPLIST_FILE = Thematic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thematic/Thematic_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
