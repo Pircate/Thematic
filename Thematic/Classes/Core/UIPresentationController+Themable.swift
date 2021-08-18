@@ -1,5 +1,5 @@
 //
-//  UIPopoverPresentationController+Themable.swift
+//  UIPresentationController+Themable.swift
 //  Thematic
 //
 //  Created by Pircate on 08/18/2021.
@@ -8,13 +8,18 @@
 
 import UIKit
 
-extension UIPopoverPresentationController: Themable {
+extension UIPresentationController: Themable {
     
-    public var theme: Theme {
+    open var theme: Theme {
         ThemeManager.shared.currentTheme
     }
     
-    open func themeDidChange(_ theme: Theme) {
+    open func themeDidChange(_ theme: Theme) {}
+}
+
+extension UIPopoverPresentationController {
+    
+    open override func themeDidChange(_ theme: Theme) {
         if let backgroundColor = backgroundColor, backgroundColor.themable {
             self.backgroundColor = backgroundColor.withThemeComponent(theme)
         }
