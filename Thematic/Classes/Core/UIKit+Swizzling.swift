@@ -57,7 +57,7 @@ extension UIView {
         }
     }
     
-    @objc func theme_didMoveToSuperview() {
+    @objc private func theme_didMoveToSuperview() {
         theme_didMoveToSuperview()
         
         themeDidChange(theme)
@@ -76,7 +76,7 @@ extension UIViewController {
         )
     }()
     
-    @objc func theme_viewDidLoad() {
+    @objc private func theme_viewDidLoad() {
         theme_viewDidLoad()
         
         themeDidChange(theme)
@@ -105,7 +105,7 @@ extension UIColor {
         }
     }()
     
-    @objc func theme_withAlphaComponent1(_ alpha: CGFloat) -> UIColor {
+    @objc private func theme_withAlphaComponent1(_ alpha: CGFloat) -> UIColor {
         let color = theme_withAlphaComponent1(alpha)
         
         color.assetInfo = assetInfo
@@ -115,7 +115,7 @@ extension UIColor {
         return color
     }
     
-    @objc func theme_withAlphaComponent2(_ alpha: CGFloat) -> UIColor {
+    @objc private func theme_withAlphaComponent2(_ alpha: CGFloat) -> UIColor {
         let color = theme_withAlphaComponent2(alpha)
         
         color.assetInfo = assetInfo

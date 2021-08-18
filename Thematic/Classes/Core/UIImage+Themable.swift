@@ -36,7 +36,7 @@ public extension UIImage {
     
     /// UIImage 构造方法
     /// - Parameters:
-    ///   - assetName: 资源名称，用了标记资源
+    ///   - assetName: 资源名称，用来标记资源
     ///   - bundle: 资源所在的 bundle
     ///   - theme: 主题，默认是当前主题
     @objc convenience init?(

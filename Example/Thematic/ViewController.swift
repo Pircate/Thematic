@@ -106,7 +106,7 @@ class ViewController: UIViewController {
         )
         navigationItem.rightBarButtonItem?.tintColor = .themeTextColor
         
-        navigationItem.title = "Theme"
+        navigationItem.title = "Thematic"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.themeTextColor]
         navigationController?.navigationBar.barTintColor = .themeMainColor
     }
