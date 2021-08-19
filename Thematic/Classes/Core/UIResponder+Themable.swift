@@ -17,6 +17,23 @@ extension UIResponder: Themable {
     open func themeDidChange(_ theme: Theme) {}
 }
 
+extension UIViewController {
+    
+    open override func themeDidChange(_ theme: Theme) {
+        super.themeDidChange(theme)
+        
+        navigationItem.leftBarButtonItems?.forEach {
+            $0.themeDidChange(theme)
+        }
+        
+        navigationItem.rightBarButtonItems?.forEach {
+            $0.themeDidChange(theme)
+        }
+        
+        tabBarItem.themeDidChange(theme)
+    }
+}
+
 extension UIView {
     
     open override func themeDidChange(_ theme: Theme) {
@@ -307,7 +324,7 @@ extension UISlider {
     }
 }
 
-private extension UIControl.State {
+extension UIControl.State {
     
     static var allStates: [UIControl.State] {
         [

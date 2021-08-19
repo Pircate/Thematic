@@ -110,7 +110,21 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.themeTextColor]
         navigationController?.navigationBar.barTintColor = .themeMainColor
         
-        self.tabBarController?.tabBar.barTintColor = .themeMainColor
+        tabBarController?.tabBar.barTintColor = .themeMainColor
+        
+        navigationController?.tabBarItem.badgeValue = "99+"
+        navigationController?.tabBarItem.title = "Thematic"
+        navigationController?.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.themeTextColor], for: .normal)
+        
+        if #available(iOS 10.0, *) {
+            navigationController?.tabBarItem.badgeColor = .themeMainColor
+            navigationController?.tabBarItem.setBadgeTextAttributes(
+                [NSAttributedString.Key.foregroundColor.rawValue: UIColor.themeTextColor],
+                for: .normal
+            )
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     @objc private func didTapDefault() {

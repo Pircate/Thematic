@@ -35,6 +35,18 @@ extension UITabBarItem {
                 self.badgeColor = badgeColor.withThemeComponent(theme)
             }
         }
+        
+        UIControl.State.allStates.forEach { state in
+            if let titleTextAttributes = titleTextAttributes(for: state) {
+                setTitleTextAttributes(titleTextAttributes.withThemeComponent(theme), for: state)
+            }
+            
+            if #available(iOS 10.0, *) {
+                if let badgeTextAttributes = badgeTextAttributes(for: state) {
+                    setBadgeTextAttributes(badgeTextAttributes.withThemeComponent(theme), for: state)
+                }
+            }
+        }
     }
 }
 

@@ -74,7 +74,7 @@ private final class EmptyTheme: Theme {
     var identifier: String { "empty" }
     
     var colorAssetType: ColorAssetType {
-        .xcassets
+        .mapTable
     }
     
     var imageAssetType: ImageAssetType {

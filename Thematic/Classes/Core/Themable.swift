@@ -12,6 +12,7 @@ public typealias Assets = [String: String]
 
 @objc public enum ColorAssetType: Int {
     /// Xcode 资源目录
+    @available(iOS 11, *)
     case xcassets
     /// 资源映射表，可以是 plist、json 等格式
     case mapTable

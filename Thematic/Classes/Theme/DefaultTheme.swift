@@ -13,7 +13,11 @@ public class DefaultTheme: Theme {
     public var identifier: String { UserInterfaceTheme.default.description }
     
     public var colorAssetType: ColorAssetType {
-        .xcassets
+        if #available(iOS 11, *) {
+            return .xcassets
+        } else {
+            return .mapTable
+        }
     }
     
     public var imageAssetType: ImageAssetType {
