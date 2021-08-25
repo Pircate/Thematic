@@ -11,22 +11,43 @@ import UIKit
 extension UIView {
     
     @objc open var overrideUserInterfaceTheme: UserInterfaceTheme {
-        .current
+        get {
+            guard let overrideTheme = overrideTheme else { return .current }
+            
+            return UserInterfaceTheme(identifier: overrideTheme.identifier)
+        }
+        set {
+            overrideTheme = newValue.theme
+        }
     }
     
     open override var theme: Theme {
-        overrideUserInterfaceTheme.theme
+        overrideTheme ?? overrideUserInterfaceTheme.theme
     }
 }
 
 extension UIViewController {
     
     @objc open var overrideUserInterfaceTheme: UserInterfaceTheme {
-        .current
+        get {
+            guard let overrideTheme = overrideTheme else { return .current }
+            
+            return UserInterfaceTheme(identifier: overrideTheme.identifier)
+        }
+        set {
+            overrideTheme = newValue.theme
+        }
     }
     
     open override var theme: Theme {
-        overrideUserInterfaceTheme.theme
+        overrideTheme ?? overrideUserInterfaceTheme.theme
+    }
+    
+    @objc open func setOverrideUserInterfaceTheme(
+        _ theme: UserInterfaceTheme,
+        for child: UIViewController
+    ) {
+        setOverrideTheme(theme.theme, for: child)
     }
 }
 

@@ -64,20 +64,3 @@ public typealias Assets = [String: String]
     /// - Parameter theme: 主题
     func themeDidChange(_ theme: Theme)
 }
-
-public extension Themable {
-    
-    /// 是否开启动态主题
-    var isDynamicThemeEnabled: Bool {
-        get {
-            ThemeManager.shared.viewHashTable.contains(self)
-        }
-        set {
-            if newValue {
-                ThemeManager.shared.viewHashTable.add(self)
-            } else {
-                ThemeManager.shared.viewHashTable.remove(self)
-            }
-        }
-    }
-}

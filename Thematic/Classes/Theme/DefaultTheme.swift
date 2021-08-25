@@ -8,7 +8,10 @@
 
 import Foundation
 
-public class DefaultTheme: Theme {
+@objcMembers
+public class DefaultTheme: NSObject, Theme {
+    
+    public override init() {}
     
     public var identifier: String { UserInterfaceTheme.default.description }
     

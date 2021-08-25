@@ -8,9 +8,10 @@
 
 import Foundation
 
-public class DarkTheme: Theme {
+@objcMembers
+public class DarkTheme: NSObject, Theme {
     
-    public init() {}
+    public override init() {}
     
     public var identifier: String { UserInterfaceTheme.dark.description }
     

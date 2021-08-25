@@ -29,6 +29,19 @@ import UIKit
     }
     
     static var current: UserInterfaceTheme = .default
+    
+    init(identifier: String) {
+        switch identifier {
+        case "unspecified":
+            self = .unspecified
+        case "light":
+            self = .light
+        case "dark":
+            self = .dark
+        default:
+            self = .default
+        }
+    }
 }
 
 extension UserInterfaceTheme: CustomStringConvertible {

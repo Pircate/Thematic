@@ -1,5 +1,5 @@
 //
-//  UIKit+Themable.swift
+//  UIResponder+Themable.swift
 //  Thematic
 //
 //  Created by Pircate on 08/17/2021.
@@ -10,14 +10,46 @@ import UIKit
 
 extension UIResponder: Themable {
     
-    open var theme: Theme {
-        ThemeManager.shared.currentTheme
+    @objc open var theme: Theme {
+        overrideTheme ?? ThemeManager.shared.currentTheme
     }
     
-    open func themeDidChange(_ theme: Theme) {}
+    @objc open func themeDidChange(_ theme: Theme) {}
+    
+    @objc var overrideTheme: Theme? {
+        get {
+            objc_getAssociatedObject(
+                self,
+                &AssociatedKeys.overrideTheme
+            ) as? Theme
+        }
+        set {
+            objc_setAssociatedObject(
+                self,
+                &AssociatedKeys.overrideTheme,
+                newValue,
+                .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+            )
+        }
+    }
 }
 
 extension UIViewController {
+    
+    override var overrideTheme: Theme? {
+        didSet {
+            themeDidChange(theme)
+            view.overrideTheme = overrideTheme
+        }
+    }
+    
+    @objc open func overrideTheme(for child: UIViewController) -> Theme? {
+        child.overrideTheme
+    }
+    
+    @objc open func setOverrideTheme(_ theme: Theme, for child: UIViewController) {
+        child.overrideTheme = theme
+    }
     
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)
@@ -35,6 +67,16 @@ extension UIViewController {
 }
 
 extension UIView {
+    
+    override var overrideTheme: Theme? {
+        didSet {
+            themeDidChange(theme)
+            
+            subviews.forEach {
+                $0.overrideTheme = theme
+            }
+        }
+    }
     
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)

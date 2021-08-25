@@ -8,9 +8,10 @@
 
 import Foundation
 
-public class DynamicTheme: Theme {
+@objcMembers
+public class DynamicTheme: NSObject, Theme {
     public var identifier: String
-    let assetsDirectory: String
+    public let assetsDirectory: String
     
     public init(identifier: String, assetsDirectory: String) {
         self.identifier = identifier

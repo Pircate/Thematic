@@ -8,9 +8,10 @@
 
 import Foundation
 
-public class LightTheme: Theme {
+@objcMembers
+public class LightTheme: NSObject, Theme {
     
-    public init() {}
+    public override init() {}
     
     public var identifier: String { UserInterfaceTheme.light.description }
     

@@ -1,5 +1,5 @@
 // 
-//  UIView+Swizzling.swift
+//  UIKit+Swizzling.swift
 //  Thematic
 //
 //  Created by Pircate on 08/17/2021.
@@ -60,9 +60,13 @@ extension UIView {
     @objc private func theme_didMoveToSuperview() {
         theme_didMoveToSuperview()
         
-        themeDidChange(theme)
+        if let superview = superview, let overrideTheme = superview.overrideTheme {
+            self.overrideTheme = overrideTheme
+        } else {
+            themeDidChange(theme)
+        }
         
-        isDynamicThemeEnabled = true
+        ThemeManager.shared.viewHashTable.add(self)
     }
 }
 
@@ -81,7 +85,7 @@ extension UIViewController {
         
         themeDidChange(theme)
         
-        isDynamicThemeEnabled = true
+        ThemeManager.shared.viewHashTable.add(self)
     }
 }
 

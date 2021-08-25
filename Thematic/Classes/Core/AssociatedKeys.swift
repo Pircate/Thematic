@@ -17,4 +17,6 @@ struct AssociatedKeys {
     static var backgroundColorAsset = "com.pircate.thematic.backgroundColorAsset"
     
     static var superUIColor = "com.pircate.thematic.superUIColor"
+    
+    static var overrideTheme = "com.pircate.thematic.overrideTheme"
 }
