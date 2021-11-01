@@ -36,8 +36,28 @@ extension UIResponder: Themable {
 
 extension UIViewController {
     
+    private var barItems: [UIBarItem] {
+        var items: [UIBarItem] = []
+        
+        if let leftBarButtonItems = navigationItem.leftBarButtonItems,
+            !leftBarButtonItems.isEmpty {
+            items += leftBarButtonItems
+        }
+        if let rightBarButtonItems = navigationItem.rightBarButtonItems,
+            !rightBarButtonItems.isEmpty {
+            items += rightBarButtonItems
+        }
+        if let tabBarItem = tabBarItem {
+            items.append(tabBarItem)
+        }
+        
+        return items
+    }
+    
     override var overrideTheme: Theme? {
         didSet {
+            guard isViewLoaded else { return }
+            
             themeDidChange(theme)
             view.overrideTheme = overrideTheme
         }
@@ -54,15 +74,9 @@ extension UIViewController {
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)
         
-        navigationItem.leftBarButtonItems?.forEach {
-            $0.themeDidChange(theme)
-        }
-        
-        navigationItem.rightBarButtonItems?.forEach {
-            $0.themeDidChange(theme)
-        }
-        
-        tabBarItem.themeDidChange(theme)
+        setNeedsStatusBarAppearanceUpdate()
+
+        barItems.forEach { $0.themeDidChange(theme) }
     }
 }
 
@@ -343,6 +357,18 @@ extension UISwitch {
 
         if let thumbTintColor = thumbTintColor, thumbTintColor.themable {
             self.thumbTintColor = thumbTintColor.withThemeComponent(theme)
+        }
+        
+        if let onTintColor = onTintColor, onTintColor.themable {
+            self.onTintColor = onTintColor.withThemeComponent(theme)
+        }
+        
+        if let onImage = onImage, onImage.themable {
+            self.onImage = onImage.withThemeComponent(theme)
+        }
+        
+        if let offImage = offImage, offImage.themable {
+            self.offImage = offImage.withThemeComponent(theme)
         }
     }
 }
