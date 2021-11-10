@@ -59,7 +59,6 @@ extension UIViewController {
             guard isViewLoaded else { return }
             
             themeDidChange(theme)
-            view.overrideTheme = overrideTheme
         }
     }
     
@@ -77,6 +76,16 @@ extension UIViewController {
         setNeedsStatusBarAppearanceUpdate()
 
         barItems.forEach { $0.themeDidChange(theme) }
+        
+        setNeedsViewOverrideThemeUpdate()
+    }
+    
+    private func setNeedsViewOverrideThemeUpdate() {
+        if overrideTheme != nil, view.overrideTheme == nil {
+            view.overrideTheme = overrideTheme
+        } else if overrideTheme == nil, view.overrideTheme != nil {
+            view.overrideTheme = overrideTheme
+        }
     }
 }
 
@@ -359,7 +368,8 @@ extension UISwitch {
             self.thumbTintColor = thumbTintColor.withThemeComponent(theme)
         }
         
-        if let onTintColor = onTintColor, onTintColor.themable {
+        if let onTintColor = onTintColor, let assetInfo = onTintColor.assetInfo {
+            assetInfo.alpha = assetInfo.alpha == 0 ? 1 : assetInfo.alpha
             self.onTintColor = onTintColor.withThemeComponent(theme)
         }
         
