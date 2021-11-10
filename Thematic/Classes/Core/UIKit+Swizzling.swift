@@ -84,8 +84,17 @@ extension UIViewController {
         theme_viewDidLoad()
         
         themeDidChange(theme)
+        setNeedsViewOverrideThemeUpdate()
         
         ThemeManager.shared.viewHashTable.add(self)
+    }
+    
+    private func setNeedsViewOverrideThemeUpdate() {
+        guard overrideTheme?.identifier != view.overrideTheme?.identifier else {
+            return
+        }
+        
+        view.overrideTheme = overrideTheme
     }
 }
 

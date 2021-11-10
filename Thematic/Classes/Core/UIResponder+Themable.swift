@@ -59,6 +59,7 @@ extension UIViewController {
             guard isViewLoaded else { return }
             
             themeDidChange(theme)
+            view.overrideTheme = overrideTheme
         }
     }
     
@@ -76,16 +77,6 @@ extension UIViewController {
         setNeedsStatusBarAppearanceUpdate()
 
         barItems.forEach { $0.themeDidChange(theme) }
-        
-        setNeedsViewOverrideThemeUpdate()
-    }
-    
-    private func setNeedsViewOverrideThemeUpdate() {
-        if overrideTheme != nil, view.overrideTheme == nil {
-            view.overrideTheme = overrideTheme
-        } else if overrideTheme == nil, view.overrideTheme != nil {
-            view.overrideTheme = overrideTheme
-        }
     }
 }
 
