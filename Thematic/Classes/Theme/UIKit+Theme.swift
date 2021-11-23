@@ -42,13 +42,6 @@ extension UIViewController {
     open override var theme: Theme {
         overrideTheme ?? overrideUserInterfaceTheme.theme
     }
-    
-    @objc open func setOverrideUserInterfaceTheme(
-        _ theme: UserInterfaceTheme,
-        for child: UIViewController
-    ) {
-        setOverrideTheme(theme.theme, for: child)
-    }
 }
 
 public extension UIColor {

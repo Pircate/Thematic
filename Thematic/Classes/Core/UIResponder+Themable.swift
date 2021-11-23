@@ -60,15 +60,11 @@ extension UIViewController {
             
             themeDidChange(theme)
             view.overrideTheme = overrideTheme
+            
+            children.forEach {
+                $0.overrideTheme = overrideTheme
+            }
         }
-    }
-    
-    @objc open func overrideTheme(for child: UIViewController) -> Theme? {
-        child.overrideTheme
-    }
-    
-    @objc open func setOverrideTheme(_ theme: Theme, for child: UIViewController) {
-        child.overrideTheme = theme
     }
     
     open override func themeDidChange(_ theme: Theme) {
@@ -87,7 +83,7 @@ extension UIView {
             themeDidChange(theme)
             
             subviews.forEach {
-                $0.overrideTheme = theme
+                $0.overrideTheme = overrideTheme
             }
         }
     }
