@@ -23,6 +23,10 @@ public class DarkTheme: NSObject, Theme {
         .xcassets
     }
     
+    public var keyboardAppearance: UIKeyboardAppearance {
+        .dark
+    }
+    
     public func colorAssetName(_ assetName: String) -> String {
         "\(identifier)/\(assetName)"
     }

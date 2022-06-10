@@ -58,9 +58,5 @@ extension UIBarButtonItem {
         if let tintColor = tintColor, tintColor.themable {
             self.tintColor = tintColor.withThemeComponent(theme)
         }
-        
-        if let image = image, image.themable {
-            self.image = image.withThemeComponent(theme)
-        }
     }
 }

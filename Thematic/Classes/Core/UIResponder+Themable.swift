@@ -95,6 +95,10 @@ extension UIView {
            let assetInfo = backgroundColorAssetInfo {
             backgroundColor.assetInfo = assetInfo
             
+            if superview?.superview is UISwitch {
+                backgroundColor.assetInfo?.alpha = assetInfo.alpha == 0 ? 1 : assetInfo.alpha
+            }
+            
             self.backgroundColor = backgroundColor.withThemeComponent(theme)
         }
         
@@ -111,10 +115,6 @@ extension UILabel {
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)
         
-        if let textColor = textColor, textColor.themable {
-            self.textColor = textColor.withThemeComponent(theme)
-        }
-
         if let highlightedTextColor = highlightedTextColor, highlightedTextColor.themable {
             self.highlightedTextColor = highlightedTextColor.withThemeComponent(theme)
         }
@@ -125,6 +125,8 @@ extension UILabel {
         
         if let attributedText = attributedText {
             self.attributedText = attributedText.withThemeComponent(theme)
+        } else if let textColor = textColor, textColor.themable {
+            self.textColor = textColor.withThemeComponent(theme)
         }
     }
 }
@@ -227,10 +229,6 @@ extension UITextField {
     
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)
-        
-        if let textColor = textColor, textColor.themable {
-            self.textColor = textColor.withThemeComponent(theme)
-        }
 
         if let attributedPlaceholder = attributedPlaceholder {
             self.attributedPlaceholder = attributedPlaceholder.withThemeComponent(theme)
@@ -238,6 +236,12 @@ extension UITextField {
         
         if let attributedText = attributedText {
             self.attributedText = attributedText.withThemeComponent(theme)
+        } else if let textColor = textColor, textColor.themable {
+            self.textColor = textColor.withThemeComponent(theme)
+        }
+        
+        if keyboardAppearance != theme.keyboardAppearance {
+            keyboardAppearance = theme.keyboardAppearance
         }
     }
 }
@@ -247,12 +251,14 @@ extension UITextView {
     open override func themeDidChange(_ theme: Theme) {
         super.themeDidChange(theme)
         
-        if let textColor = textColor, textColor.themable {
+        if let attributedText = attributedText {
+            self.attributedText = attributedText.withThemeComponent(theme)
+        } else if let textColor = textColor, textColor.themable {
             self.textColor = textColor.withThemeComponent(theme)
         }
         
-        if let attributedText = attributedText {
-            self.attributedText = attributedText.withThemeComponent(theme)
+        if keyboardAppearance != theme.keyboardAppearance {
+            keyboardAppearance = theme.keyboardAppearance
         }
     }
 }

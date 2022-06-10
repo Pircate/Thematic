@@ -26,6 +26,10 @@ public class DynamicTheme: NSObject, Theme {
         .filePath
     }
     
+    public var keyboardAppearance: UIKeyboardAppearance {
+        .default
+    }
+    
     public func colorAssetName(_ assetName: String) -> String {
         "\(identifier)/\(assetName)"
     }

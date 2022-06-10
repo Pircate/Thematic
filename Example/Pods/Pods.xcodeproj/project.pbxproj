@@ -7,46 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0014BBEB3ABE38D0B6D8D29DCF8963C3 /* UIBarItem+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2FF1CB052F983EC7790C1782E2967 /* UIBarItem+Themable.swift */; };
-		096CFEB2C5D4C047D8EDF79CDCA3EF61 /* UIImage+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFFA6109A90F2AAE07C4D0C02A2306 /* UIImage+Themable.swift */; };
-		16348E3B99E542971E2CC7F8FE206667 /* CGColor+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC29DCFCD90894210E7A8D360CEF080 /* CGColor+Themable.swift */; };
-		1B66541BAA645AD7D8F7571C0E1EBE66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1D064CB648D65CBC087677165933ED75 /* Pods-Thematic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E9D0354FB671069E887464B25FD949 /* Pods-Thematic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23DB37E54A7C9B7AC54DFCBEC339D0F4 /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB41EF32BC5720AE7A2138E36F0F63 /* Themable.swift */; };
-		2EA0FAD67639242FCFAB0A5A2D5B4478 /* CALayer+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59FF885E9B741611357FB873E14F4A5 /* CALayer+Themable.swift */; };
-		3450DDEF85CF2C6E10C3335C6791DAA4 /* NSAttributedString+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C240E45E8617D75B0FA77F890D7C2A9 /* NSAttributedString+Themable.swift */; };
-		40552D0784B3DC78491A33E128AE9EE3 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8E19B9E13E88A45CC444E154AFD7A /* ThemeManager.swift */; };
-		40A09FC3071407C604429C7BFB2143CE /* UserInterfaceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08300B84BBF23AF08208DC540D7A17A /* UserInterfaceTheme.swift */; };
-		5732F7DFEEB1CAA91FADCAAF376A58EE /* Pods-Thematic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E94B989336311DA819DE0A7C0DD189 /* Pods-Thematic_Example-dummy.m */; };
-		616C3DE8886A3A4D6955DE117B5DF663 /* Pods-Thematic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75615A9A93349A34BF012E4E45E3B9D /* Pods-Thematic_Tests-dummy.m */; };
-		6E4350ADA9FAE37AF0BB95666EC9159D /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26DEFBFB6424BC7B2ED8C8DC3187FB /* DefaultTheme.swift */; };
-		7019485056BA7A85E04572F00A430CAB /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433DAF87AB528E5AC067834987D2447 /* LightTheme.swift */; };
-		763A6357D457859016D670ACF4AB3D83 /* AssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80A22EBA9D7325C13A6CAAF65F1ECA /* AssociatedKeys.swift */; };
-		82B4D285D6F35429BD879C5FDB70516C /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C293D32470FB56C05445E7D159ECE /* AssetInfo.swift */; };
-		8976556FBBB381AD78462FACF3E5C96A /* UIPresentationController+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2176F89560D159D215A09D8459761 /* UIPresentationController+Themable.swift */; };
-		8992F4550ADC7E6224EF2C4163AB66BC /* UIKit+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF02185899E390B0BB83378148DC9F /* UIKit+Swizzling.swift */; };
-		8CE59DB01969787DF582646A909D217B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		986D37774576031348B5A777DB64D622 /* UIKit+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609AC84CDF0C232512D41B87D790ADBB /* UIKit+Theme.swift */; };
-		98F9C513A053886CEBF1C0F59BBD6FDB /* UIResponder+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA0918FE2427DA7434DB360FD3A064 /* UIResponder+Themable.swift */; };
-		A5F384055464CBDAAAAEA84D4731BBA8 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E8BFC6310EA4538B9712713105C830 /* DynamicTheme.swift */; };
-		BA0717327C2A7939A0529E13A87905E0 /* Thematic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F1DE3432D454CC7A0265F547DE22F7 /* Thematic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCC041D8EEC639012EBB18EC504E5C95 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2B2474BE8748C96EE44A05468898B /* DarkTheme.swift */; };
-		C0775A17F0EDC0D223263B2CF945881D /* ThemeManager+ApplyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B050401DC86AF00C8C8D71B05C8C69 /* ThemeManager+ApplyTheme.swift */; };
-		C6384E3BBADA6B8F1790CDC4997C3C36 /* UIColor+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886B7D9DA7E540198C7C9BB17056D91 /* UIColor+Themable.swift */; };
-		D9C82DEBBB890F7B5C7881DD2497104C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EA647EE5049F8503252E4B04FE45D64A /* Pods-Thematic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A36025946FD8F4B2A775669A8B5FC1E0 /* Pods-Thematic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F309BF85BD66CAFFED80EBF5C74A2178 /* Thematic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77FC1D9FA2E1283A9842D9CADA33082 /* Thematic-dummy.m */; };
+		08AF5F56B9BBEDDEF3D3B4EAF906C912 /* UIKit+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF02185899E390B0BB83378148DC9F /* UIKit+Swizzling.swift */; };
+		0CF4E83010AE7039579DC0450B6CA6B7 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433DAF87AB528E5AC067834987D2447 /* LightTheme.swift */; };
+		1D338F71EE3610A2A1E41CDACBBF53AD /* Pods-Thematic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A36025946FD8F4B2A775669A8B5FC1E0 /* Pods-Thematic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C90D0642E7F84032E2228BB833FD72 /* Thematic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F1DE3432D454CC7A0265F547DE22F7 /* Thematic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E30E20F3EED442793DA8681E582C335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2FD49D9DB7BA6DCDCC1AB43AB52A0AAC /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26DEFBFB6424BC7B2ED8C8DC3187FB /* DefaultTheme.swift */; };
+		3132AA6EADC386C85415DAEDDA45253B /* AssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80A22EBA9D7325C13A6CAAF65F1ECA /* AssociatedKeys.swift */; };
+		3F2076E958E78147735A02EA6338CD4D /* UserInterfaceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08300B84BBF23AF08208DC540D7A17A /* UserInterfaceTheme.swift */; };
+		447266A580107AD4A32E4F7353FBC4CA /* CGColor+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC29DCFCD90894210E7A8D360CEF080 /* CGColor+Themable.swift */; };
+		6F72641AA9DC492BA5CF95F15A39EEB4 /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB41EF32BC5720AE7A2138E36F0F63 /* Themable.swift */; };
+		7EE27B1DD3A34265489ADBFD32912EE5 /* UIColor+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886B7D9DA7E540198C7C9BB17056D91 /* UIColor+Themable.swift */; };
+		839B36060A467BC6E638DF9D3E86F386 /* ThemeManager+ApplyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B050401DC86AF00C8C8D71B05C8C69 /* ThemeManager+ApplyTheme.swift */; };
+		8CC4C84EF9C41974EDD57F2D18C0BB0F /* UIKit+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609AC84CDF0C232512D41B87D790ADBB /* UIKit+Theme.swift */; };
+		8F6CE9F3AFAFEF4D2AE7BAEF73CE3D1D /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C293D32470FB56C05445E7D159ECE /* AssetInfo.swift */; };
+		98FA066FDEF58547F3688914C980F498 /* UIResponder+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA0918FE2427DA7434DB360FD3A064 /* UIResponder+Themable.swift */; };
+		98FF5064A1FCEB95F851B1DD39980680 /* DynamicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E8BFC6310EA4538B9712713105C830 /* DynamicTheme.swift */; };
+		9E5139B19470A4ED0858D7351B595088 /* Pods-Thematic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E9D0354FB671069E887464B25FD949 /* Pods-Thematic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D7D2AD2A67AC6F74CFF02BBA2483EF /* UIPresentationController+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2176F89560D159D215A09D8459761 /* UIPresentationController+Themable.swift */; };
+		B994FAD6BEA8793D72B3C104922D50EC /* NSAttributedString+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C240E45E8617D75B0FA77F890D7C2A9 /* NSAttributedString+Themable.swift */; };
+		C0E9649E19926A4B5BCEF31734398215 /* CALayer+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59FF885E9B741611357FB873E14F4A5 /* CALayer+Themable.swift */; };
+		CF43E69C76B0EF78C2F2004C46EECC47 /* Thematic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77FC1D9FA2E1283A9842D9CADA33082 /* Thematic-dummy.m */; };
+		D74F5F7350343C5FF2D3F8F8598E8CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E11EBAF45EC6930F6E6B9A01A534CAB8 /* UIBarItem+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2FF1CB052F983EC7790C1782E2967 /* UIBarItem+Themable.swift */; };
+		E87C35C839ECE0DAEFC5E8DA75F94E72 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2B2474BE8748C96EE44A05468898B /* DarkTheme.swift */; };
+		EFD5DEC5A44340866C5CE5670B1AF829 /* Pods-Thematic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75615A9A93349A34BF012E4E45E3B9D /* Pods-Thematic_Tests-dummy.m */; };
+		F3F2159DE3C2F50434F5FCECD0066B9A /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8E19B9E13E88A45CC444E154AFD7A /* ThemeManager.swift */; };
+		F8401A34BA3C7BD7500ABEB91C47ABA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FC7E4CA6797E1B1769BB8739DCAE1D06 /* Pods-Thematic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E94B989336311DA819DE0A7C0DD189 /* Pods-Thematic_Example-dummy.m */; };
+		FE299705AE8D06FFAC67CBA4741A95F5 /* UIImage+Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFFA6109A90F2AAE07C4D0C02A2306 /* UIImage+Themable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0978C4F107F6F54D44A017AC24D47B10 /* PBXContainerItemProxy */ = {
+		29D51EB0DE817C0DD91CE3AAE3A433A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87E5AFF7807D647111F219DA94C22ACE;
 			remoteInfo = "Pods-Thematic_Example";
 		};
-		D8A825AD54261308EE181ADDE29D003A /* PBXContainerItemProxy */ = {
+		F73BF0121955A454A35801844DD02AAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -58,7 +58,7 @@
 /* Begin PBXFileReference section */
 		012DF033E03CF8A1E34CB20F4C257864 /* Pods-Thematic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thematic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		03B2176F89560D159D215A09D8459761 /* UIPresentationController+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPresentationController+Themable.swift"; path = "Thematic/Classes/Core/UIPresentationController+Themable.swift"; sourceTree = "<group>"; };
-		0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods_Thematic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Thematic_Example.framework; path = "Pods-Thematic_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods-Thematic_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Thematic_Example"; path = Pods_Thematic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F86A51D92AA05530BE089E22F97004B /* Pods-Thematic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thematic_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		12A5EA22AE5236FBC8DA5AB12916BCAD /* Pods-Thematic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Thematic_Example.modulemap"; sourceTree = "<group>"; };
 		147B513D4236AD7C614690B7BE7F0F14 /* Pods-Thematic_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thematic_Example-Info.plist"; sourceTree = "<group>"; };
@@ -89,11 +89,11 @@
 		A1E9D0354FB671069E887464B25FD949 /* Pods-Thematic_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thematic_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A36025946FD8F4B2A775669A8B5FC1E0 /* Pods-Thematic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thematic_Example-umbrella.h"; sourceTree = "<group>"; };
 		AFC747B8AEDA518D74249175C0B5BE6C /* Thematic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Thematic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Thematic.framework; path = Thematic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Thematic; path = Thematic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0691B144C00DF5B72B51ECB552E2008 /* Pods-Thematic_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thematic_Tests-Info.plist"; sourceTree = "<group>"; };
 		C0E94B989336311DA819DE0A7C0DD189 /* Pods-Thematic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thematic_Example-dummy.m"; sourceTree = "<group>"; };
 		CCC29DCFCD90894210E7A8D360CEF080 /* CGColor+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGColor+Themable.swift"; path = "Thematic/Classes/Core/CGColor+Themable.swift"; sourceTree = "<group>"; };
-		D53C807ED763672CAE15E628EC7C9FFC /* Pods_Thematic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Thematic_Tests.framework; path = "Pods-Thematic_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53C807ED763672CAE15E628EC7C9FFC /* Pods-Thematic_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Thematic_Tests"; path = Pods_Thematic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59FF885E9B741611357FB873E14F4A5 /* CALayer+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Themable.swift"; path = "Thematic/Classes/Core/CALayer+Themable.swift"; sourceTree = "<group>"; };
 		D77FC1D9FA2E1283A9842D9CADA33082 /* Thematic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Thematic-dummy.m"; sourceTree = "<group>"; };
 		D7EFFA6109A90F2AAE07C4D0C02A2306 /* UIImage+Themable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Themable.swift"; path = "Thematic/Classes/Core/UIImage+Themable.swift"; sourceTree = "<group>"; };
@@ -110,27 +110,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5922F4E8D56C39D110423A3668462066 /* Frameworks */ = {
+		45493F5689AF76409CB1DA941F25741A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B66541BAA645AD7D8F7571C0E1EBE66 /* Foundation.framework in Frameworks */,
+				D74F5F7350343C5FF2D3F8F8598E8CF7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA6BDDA503D1CD1F978255A73053A385 /* Frameworks */ = {
+		5A8F55D214DCB8A9F90AC7784ABBA59D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C82DEBBB890F7B5C7881DD2497104C /* Foundation.framework in Frameworks */,
+				F8401A34BA3C7BD7500ABEB91C47ABA3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF4E84BE5F0406DFFAB58E38E19C4AFC /* Frameworks */ = {
+		75299D51EFC267EFB70CAE29026AB70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE59DB01969787DF582646A909D217B /* Foundation.framework in Frameworks */,
+				2E30E20F3EED442793DA8681E582C335 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +143,16 @@
 				C01120A362E7A78A4EC70B0FEB67549E /* Thematic */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1BEDC01A86B1DA0C7D91F79C357734E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods-Thematic_Example */,
+				D53C807ED763672CAE15E628EC7C9FFC /* Pods-Thematic_Tests */,
+				B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2246F85E8F710AA8D6A92859889F376A /* Pods-Thematic_Tests */ = {
@@ -182,16 +192,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		75F4D4363DD7786C29A67546F29EC91B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods_Thematic_Example.framework */,
-				D53C807ED763672CAE15E628EC7C9FFC /* Pods_Thematic_Tests.framework */,
-				B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		77FFAFAF314D53806380C643DBBFE4DC /* Targets Support Files */ = {
@@ -265,7 +265,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				020BC4638EA9CD71E85887B76F53E5E7 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				75F4D4363DD7786C29A67546F29EC91B /* Products */,
+				1BEDC01A86B1DA0C7D91F79C357734E3 /* Products */,
 				77FFAFAF314D53806380C643DBBFE4DC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -297,27 +297,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		78E003589B0B58E94ED0C04E4F4A5C2B /* Headers */ = {
+		1E8649584A4A7E05E0FFDCA7DE400262 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA647EE5049F8503252E4B04FE45D64A /* Pods-Thematic_Example-umbrella.h in Headers */,
+				9E5139B19470A4ED0858D7351B595088 /* Pods-Thematic_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B011D6AE0ADFD381EAD308628FA403F /* Headers */ = {
+		217D89D73F28AC14F7D1BB2BFCB66809 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0717327C2A7939A0529E13A87905E0 /* Thematic-umbrella.h in Headers */,
+				27C90D0642E7F84032E2228BB833FD72 /* Thematic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F86E2A8CD47EDCA9FE281C7C12B23C58 /* Headers */ = {
+		2EE82B9AA2DD2FB87DFBE6F9672BC463 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D064CB648D65CBC087677165933ED75 /* Pods-Thematic_Tests-umbrella.h in Headers */,
+				1D338F71EE3610A2A1E41CDACBBF53AD /* Pods-Thematic_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,31 +326,31 @@
 /* Begin PBXNativeTarget section */
 		12827265FA701380C018AD5B10CBA532 /* Pods-Thematic_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 341A1F7818BA953EDE34B11612A94ECF /* Build configuration list for PBXNativeTarget "Pods-Thematic_Tests" */;
+			buildConfigurationList = 5D4F1D7DFD89C8F8F89B8030D0BA95C0 /* Build configuration list for PBXNativeTarget "Pods-Thematic_Tests" */;
 			buildPhases = (
-				F86E2A8CD47EDCA9FE281C7C12B23C58 /* Headers */,
-				444545D25DE354852E577ACD26E50468 /* Sources */,
-				FF4E84BE5F0406DFFAB58E38E19C4AFC /* Frameworks */,
-				4D53BC0A9A89E5987BAF726ECF9E7A56 /* Resources */,
+				1E8649584A4A7E05E0FFDCA7DE400262 /* Headers */,
+				CDAF255898F88B25ED92AC5B9E43E350 /* Sources */,
+				5A8F55D214DCB8A9F90AC7784ABBA59D /* Frameworks */,
+				36B90D02711643D5AA99D97D94494C7B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30DE7719F0B640D3DF923623B32C4207 /* PBXTargetDependency */,
+				620C9D450576B307017A4A423037FC7B /* PBXTargetDependency */,
 			);
 			name = "Pods-Thematic_Tests";
-			productName = "Pods-Thematic_Tests";
-			productReference = D53C807ED763672CAE15E628EC7C9FFC /* Pods_Thematic_Tests.framework */;
+			productName = Pods_Thematic_Tests;
+			productReference = D53C807ED763672CAE15E628EC7C9FFC /* Pods-Thematic_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		75C4412CDBABBAC5892552609BD85932 /* Thematic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7790A187448432FF9CB337F3763EABA /* Build configuration list for PBXNativeTarget "Thematic" */;
+			buildConfigurationList = C20C8277CB5107C978489353EBB4B7C1 /* Build configuration list for PBXNativeTarget "Thematic" */;
 			buildPhases = (
-				8B011D6AE0ADFD381EAD308628FA403F /* Headers */,
-				18AF7403E5851FAF53D35AD7270A8CA1 /* Sources */,
-				BA6BDDA503D1CD1F978255A73053A385 /* Frameworks */,
-				0DA76A57A000E906D8B3FD0A311F2F44 /* Resources */,
+				217D89D73F28AC14F7D1BB2BFCB66809 /* Headers */,
+				C989B143D6783CFFC2DA05F7EB3EB7A1 /* Sources */,
+				75299D51EFC267EFB70CAE29026AB70C /* Frameworks */,
+				82C6346EB888BA281C13492762BD4190 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -358,26 +358,26 @@
 			);
 			name = Thematic;
 			productName = Thematic;
-			productReference = B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic.framework */;
+			productReference = B30313A0E84251C1B0C2B9A8C5B05F2A /* Thematic */;
 			productType = "com.apple.product-type.framework";
 		};
 		87E5AFF7807D647111F219DA94C22ACE /* Pods-Thematic_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8045C0C5AE459A33DFA32240DEB6B173 /* Build configuration list for PBXNativeTarget "Pods-Thematic_Example" */;
+			buildConfigurationList = 19C58946F800CB8D09ABF24F9FC4316A /* Build configuration list for PBXNativeTarget "Pods-Thematic_Example" */;
 			buildPhases = (
-				78E003589B0B58E94ED0C04E4F4A5C2B /* Headers */,
-				F9128366003F50D62620FE7E149DE521 /* Sources */,
-				5922F4E8D56C39D110423A3668462066 /* Frameworks */,
-				C8D681D4CE3DB635797271D75F0378FD /* Resources */,
+				2EE82B9AA2DD2FB87DFBE6F9672BC463 /* Headers */,
+				98E268F7DDDFABF99939942CC474853A /* Sources */,
+				45493F5689AF76409CB1DA941F25741A /* Frameworks */,
+				EF764F91B33DA18EAD5659101141E9E3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9CFD23AC0687D5A65C3BB1BBF49F57DC /* PBXTargetDependency */,
+				1B47D93FBAB0A332A43BBB6847F61D3E /* PBXTargetDependency */,
 			);
 			name = "Pods-Thematic_Example";
-			productName = "Pods-Thematic_Example";
-			productReference = 0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods_Thematic_Example.framework */;
+			productName = Pods_Thematic_Example;
+			productReference = 0950FFEBC6414D9BBE814B9B4DAE79AE /* Pods-Thematic_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -386,19 +386,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 75F4D4363DD7786C29A67546F29EC91B /* Products */;
+			productRefGroup = 1BEDC01A86B1DA0C7D91F79C357734E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -410,21 +410,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0DA76A57A000E906D8B3FD0A311F2F44 /* Resources */ = {
+		36B90D02711643D5AA99D97D94494C7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D53BC0A9A89E5987BAF726ECF9E7A56 /* Resources */ = {
+		82C6346EB888BA281C13492762BD4190 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8D681D4CE3DB635797271D75F0378FD /* Resources */ = {
+		EF764F91B33DA18EAD5659101141E9E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,68 +434,100 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18AF7403E5851FAF53D35AD7270A8CA1 /* Sources */ = {
+		98E268F7DDDFABF99939942CC474853A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B4D285D6F35429BD879C5FDB70516C /* AssetInfo.swift in Sources */,
-				763A6357D457859016D670ACF4AB3D83 /* AssociatedKeys.swift in Sources */,
-				2EA0FAD67639242FCFAB0A5A2D5B4478 /* CALayer+Themable.swift in Sources */,
-				16348E3B99E542971E2CC7F8FE206667 /* CGColor+Themable.swift in Sources */,
-				BCC041D8EEC639012EBB18EC504E5C95 /* DarkTheme.swift in Sources */,
-				6E4350ADA9FAE37AF0BB95666EC9159D /* DefaultTheme.swift in Sources */,
-				A5F384055464CBDAAAAEA84D4731BBA8 /* DynamicTheme.swift in Sources */,
-				7019485056BA7A85E04572F00A430CAB /* LightTheme.swift in Sources */,
-				3450DDEF85CF2C6E10C3335C6791DAA4 /* NSAttributedString+Themable.swift in Sources */,
-				23DB37E54A7C9B7AC54DFCBEC339D0F4 /* Themable.swift in Sources */,
-				F309BF85BD66CAFFED80EBF5C74A2178 /* Thematic-dummy.m in Sources */,
-				C0775A17F0EDC0D223263B2CF945881D /* ThemeManager+ApplyTheme.swift in Sources */,
-				40552D0784B3DC78491A33E128AE9EE3 /* ThemeManager.swift in Sources */,
-				0014BBEB3ABE38D0B6D8D29DCF8963C3 /* UIBarItem+Themable.swift in Sources */,
-				C6384E3BBADA6B8F1790CDC4997C3C36 /* UIColor+Themable.swift in Sources */,
-				096CFEB2C5D4C047D8EDF79CDCA3EF61 /* UIImage+Themable.swift in Sources */,
-				8992F4550ADC7E6224EF2C4163AB66BC /* UIKit+Swizzling.swift in Sources */,
-				986D37774576031348B5A777DB64D622 /* UIKit+Theme.swift in Sources */,
-				8976556FBBB381AD78462FACF3E5C96A /* UIPresentationController+Themable.swift in Sources */,
-				98F9C513A053886CEBF1C0F59BBD6FDB /* UIResponder+Themable.swift in Sources */,
-				40A09FC3071407C604429C7BFB2143CE /* UserInterfaceTheme.swift in Sources */,
+				FC7E4CA6797E1B1769BB8739DCAE1D06 /* Pods-Thematic_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		444545D25DE354852E577ACD26E50468 /* Sources */ = {
+		C989B143D6783CFFC2DA05F7EB3EB7A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616C3DE8886A3A4D6955DE117B5DF663 /* Pods-Thematic_Tests-dummy.m in Sources */,
+				8F6CE9F3AFAFEF4D2AE7BAEF73CE3D1D /* AssetInfo.swift in Sources */,
+				3132AA6EADC386C85415DAEDDA45253B /* AssociatedKeys.swift in Sources */,
+				C0E9649E19926A4B5BCEF31734398215 /* CALayer+Themable.swift in Sources */,
+				447266A580107AD4A32E4F7353FBC4CA /* CGColor+Themable.swift in Sources */,
+				E87C35C839ECE0DAEFC5E8DA75F94E72 /* DarkTheme.swift in Sources */,
+				2FD49D9DB7BA6DCDCC1AB43AB52A0AAC /* DefaultTheme.swift in Sources */,
+				98FF5064A1FCEB95F851B1DD39980680 /* DynamicTheme.swift in Sources */,
+				0CF4E83010AE7039579DC0450B6CA6B7 /* LightTheme.swift in Sources */,
+				B994FAD6BEA8793D72B3C104922D50EC /* NSAttributedString+Themable.swift in Sources */,
+				6F72641AA9DC492BA5CF95F15A39EEB4 /* Themable.swift in Sources */,
+				CF43E69C76B0EF78C2F2004C46EECC47 /* Thematic-dummy.m in Sources */,
+				F3F2159DE3C2F50434F5FCECD0066B9A /* ThemeManager.swift in Sources */,
+				839B36060A467BC6E638DF9D3E86F386 /* ThemeManager+ApplyTheme.swift in Sources */,
+				E11EBAF45EC6930F6E6B9A01A534CAB8 /* UIBarItem+Themable.swift in Sources */,
+				7EE27B1DD3A34265489ADBFD32912EE5 /* UIColor+Themable.swift in Sources */,
+				FE299705AE8D06FFAC67CBA4741A95F5 /* UIImage+Themable.swift in Sources */,
+				08AF5F56B9BBEDDEF3D3B4EAF906C912 /* UIKit+Swizzling.swift in Sources */,
+				8CC4C84EF9C41974EDD57F2D18C0BB0F /* UIKit+Theme.swift in Sources */,
+				B1D7D2AD2A67AC6F74CFF02BBA2483EF /* UIPresentationController+Themable.swift in Sources */,
+				98FA066FDEF58547F3688914C980F498 /* UIResponder+Themable.swift in Sources */,
+				3F2076E958E78147735A02EA6338CD4D /* UserInterfaceTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9128366003F50D62620FE7E149DE521 /* Sources */ = {
+		CDAF255898F88B25ED92AC5B9E43E350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5732F7DFEEB1CAA91FADCAAF376A58EE /* Pods-Thematic_Example-dummy.m in Sources */,
+				EFD5DEC5A44340866C5CE5670B1AF829 /* Pods-Thematic_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30DE7719F0B640D3DF923623B32C4207 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Thematic_Example";
-			target = 87E5AFF7807D647111F219DA94C22ACE /* Pods-Thematic_Example */;
-			targetProxy = 0978C4F107F6F54D44A017AC24D47B10 /* PBXContainerItemProxy */;
-		};
-		9CFD23AC0687D5A65C3BB1BBF49F57DC /* PBXTargetDependency */ = {
+		1B47D93FBAB0A332A43BBB6847F61D3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Thematic;
 			target = 75C4412CDBABBAC5892552609BD85932 /* Thematic */;
-			targetProxy = D8A825AD54261308EE181ADDE29D003A /* PBXContainerItemProxy */;
+			targetProxy = F73BF0121955A454A35801844DD02AAA /* PBXContainerItemProxy */;
+		};
+		620C9D450576B307017A4A423037FC7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Thematic_Example";
+			target = 87E5AFF7807D647111F219DA94C22ACE /* Pods-Thematic_Example */;
+			targetProxy = 29D51EB0DE817C0DD91CE3AAE3A433A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		22B89A9228037A7493D0211C20E29A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F86A51D92AA05530BE089E22F97004B /* Pods-Thematic_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Example/Pods-Thematic_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Example/Pods-Thematic_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,9 +594,9 @@
 			};
 			name = Debug;
 		};
-		7138C8D406754514032987C63B1C1A6D /* Release */ = {
+		3082C9E35820EE7F0B20A5FBBF4FA0A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 962DBDA3CDD755D2AC8826E8FC36D78E /* Pods-Thematic_Example.release.xcconfig */;
+			baseConfigurationReference = 2340D7D7B9922307DB1256B4704F4801 /* Pods-Thematic_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -575,12 +607,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Example/Pods-Thematic_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Example/Pods-Thematic_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -595,7 +627,39 @@
 			};
 			name = Release;
 		};
-		B169E024EF16CF2D3CB3E4951D129962 /* Debug */ = {
+		49DB1F3D629A0CB5330DC3014264D777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C08226A7295E4B0CC795328DF23A17C /* Pods-Thematic_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8474D7015EFC2B05E5F3CD739454C121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F957ECB24C8032C10ABA3C24912CE1FB /* Thematic.debug.xcconfig */;
 			buildSettings = {
@@ -625,6 +689,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		9EFD07349D8E947C78AC8D8F25DCF2A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5524DE6E28155B89106127BF242574DA /* Thematic.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Thematic/Thematic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Thematic/Thematic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Thematic/Thematic.modulemap";
+				PRODUCT_MODULE_NAME = Thematic;
+				PRODUCT_NAME = Thematic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -688,74 +784,9 @@
 			};
 			name = Release;
 		};
-		D10A06FE39BB11AEB27B6135F5A6415A /* Release */ = {
+		D2761AF4FA032197E2EB5A0579B64456 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5524DE6E28155B89106127BF242574DA /* Thematic.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Thematic/Thematic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Thematic/Thematic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Thematic/Thematic.modulemap";
-				PRODUCT_MODULE_NAME = Thematic;
-				PRODUCT_NAME = Thematic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D8C5ACA665744E09510E9759A4FEFE01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2340D7D7B9922307DB1256B4704F4801 /* Pods-Thematic_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E09870250489437055D7FC4C92B5CD42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F86A51D92AA05530BE089E22F97004B /* Pods-Thematic_Example.debug.xcconfig */;
+			baseConfigurationReference = 962DBDA3CDD755D2AC8826E8FC36D78E /* Pods-Thematic_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -780,51 +811,20 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		F67925FAC9425E1DCC4F8570E3AA86B3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C08226A7295E4B0CC795328DF23A17C /* Pods-Thematic_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Thematic_Tests/Pods-Thematic_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		341A1F7818BA953EDE34B11612A94ECF /* Build configuration list for PBXNativeTarget "Pods-Thematic_Tests" */ = {
+		19C58946F800CB8D09ABF24F9FC4316A /* Build configuration list for PBXNativeTarget "Pods-Thematic_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F67925FAC9425E1DCC4F8570E3AA86B3 /* Debug */,
-				D8C5ACA665744E09510E9759A4FEFE01 /* Release */,
+				22B89A9228037A7493D0211C20E29A0B /* Debug */,
+				D2761AF4FA032197E2EB5A0579B64456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -838,20 +838,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8045C0C5AE459A33DFA32240DEB6B173 /* Build configuration list for PBXNativeTarget "Pods-Thematic_Example" */ = {
+		5D4F1D7DFD89C8F8F89B8030D0BA95C0 /* Build configuration list for PBXNativeTarget "Pods-Thematic_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E09870250489437055D7FC4C92B5CD42 /* Debug */,
-				7138C8D406754514032987C63B1C1A6D /* Release */,
+				49DB1F3D629A0CB5330DC3014264D777 /* Debug */,
+				3082C9E35820EE7F0B20A5FBBF4FA0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7790A187448432FF9CB337F3763EABA /* Build configuration list for PBXNativeTarget "Thematic" */ = {
+		C20C8277CB5107C978489353EBB4B7C1 /* Build configuration list for PBXNativeTarget "Thematic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B169E024EF16CF2D3CB3E4951D129962 /* Debug */,
-				D10A06FE39BB11AEB27B6135F5A6415A /* Release */,
+				8474D7015EFC2B05E5F3CD739454C121 /* Debug */,
+				9EFD07349D8E947C78AC8D8F25DCF2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

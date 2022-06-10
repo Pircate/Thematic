@@ -36,7 +36,7 @@ public extension ThemeManager {
         applyTheme(theme)
     }
     
-    /// 设置自动主题，跟随系统自动切换，APP进入激活状态的时候切换主题
+    /// 设置自动主题，跟随系统自动切换
     /// - Parameter automatic: 自动主题
     @available(iOS 13.0, *)
     func applyAutomaticTheme(_ automatic: Bool) {

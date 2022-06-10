@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Thematic'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'iOS 主题设置和动态切换库'
   s.homepage         = 'https://github.com/Pircate/Thematic'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

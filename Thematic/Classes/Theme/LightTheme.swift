@@ -23,6 +23,10 @@ public class LightTheme: NSObject, Theme {
         .xcassets
     }
     
+    public var keyboardAppearance: UIKeyboardAppearance {
+        .light
+    }
+    
     public func colorAssetName(_ assetName: String) -> String {
         "\(identifier)/\(assetName)"
     }

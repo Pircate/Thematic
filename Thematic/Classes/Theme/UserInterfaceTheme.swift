@@ -28,7 +28,7 @@ import UIKit
         }
     }
     
-    static var current: UserInterfaceTheme = .default
+    public internal(set) static var current: UserInterfaceTheme = .default
     
     init(identifier: String) {
         switch identifier {

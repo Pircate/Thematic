@@ -27,6 +27,10 @@ public class DefaultTheme: NSObject, Theme {
         .xcassets
     }
     
+    public var keyboardAppearance: UIKeyboardAppearance {
+        .default
+    }
+    
     public func colorAssetName(_ assetName: String) -> String {
         "\(identifier)/\(assetName)"
     }

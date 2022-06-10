@@ -24,10 +24,8 @@ public class ThemeManager: NSObject {
                 reloadAssets(for: currentTheme, in: bundle)
             }
             
-            UIView.animate(withDuration: 0.25) {
-                self.viewHashTable.allObjects.forEach { view in
-                    view.themeDidChange(view.theme)
-                }
+            self.viewHashTable.allObjects.forEach { view in
+                view.themeDidChange(view.theme)
             }
         }
     }
@@ -79,6 +77,10 @@ private final class EmptyTheme: Theme {
     
     var imageAssetType: ImageAssetType {
         .xcassets
+    }
+    
+    var keyboardAppearance: UIKeyboardAppearance {
+        .default
     }
     
     public func colorAssetName(_ assetName: String) -> String {

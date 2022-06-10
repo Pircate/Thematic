@@ -36,6 +36,9 @@ public typealias Assets = [String: String]
     /// 图片资源加载方式
     var imageAssetType: ImageAssetType { get }
     
+    /// 键盘显示风格
+    var keyboardAppearance: UIKeyboardAppearance { get }
+    
     /// 颜色资源名称，当 colorAssetType 为 xcassets 时调用，
     /// 用于加载 xcassets 中的颜色资源，一般用文件夹对主题进行区分
     /// - Parameter assetName: 资源名称
